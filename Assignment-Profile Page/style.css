@@ -8,3 +8,21 @@
     background-color: black;
     opacity: 0.7;
 }
+.port-item{
+    width:200%;
+}
+#mainheader .port-item:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .port-item{
+        height:6em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .port-item{
+        height:7.5em;
+    }
+}
