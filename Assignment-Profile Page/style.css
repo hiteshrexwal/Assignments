@@ -15,6 +15,15 @@
     opacity: 0.8;
     cursor: pointer;
 }
+@media (max-width: 575.98px) {
+    .port-item{
+        width:30%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .port-item{
         height:6em;
