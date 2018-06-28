@@ -13,7 +13,7 @@
             crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
             crossorigin="anonymous"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <title>Profile Page</title>
 </head>
 
@@ -27,7 +27,7 @@
             <div class=" col-lg-9 col-md-8">
                 <div class="d-flex flex-column">
                     <div class="d-flex flex-row justify-content-between align-items-center bg-secondary">
-                        <h2 class="display-4 p-4 text-white">Hitesh Rexwal</h2>
+                        <h2 class="display-4 p-4 text-white" id="name">Hitesh Rexwal</h2>
                         <div class="d-none d-md-block">
                             <a href="https://twitter.com" class="text-white">
                                 <i class="fab fa-twitter"></i>
@@ -52,19 +52,19 @@
                     <div class="d-flex flex-row bg-dark text-white p-4">Software Engineer</div>
                     <div class="d-flex flex-row align-items-stretch text-center text-white">
                         <div class="port-item p-4 bg-primary justify-content-center" data-toggle="collapse" data-target="#home">
-                            <i class="fas fa-home fa-2x d-block"></i>
+                            <i class="fas fa-home fa-2x d-block" id="homeicon"></i>
                             <span class="d-none d-sm-block">Home</span>
                         </div>
                         <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
-                            <i class="fas fa-graduation-cap fa-2x d-block"></i>
+                            <i class="fas fa-graduation-cap fa-2x d-block" id="resumeicon"></i>
                             <span class="d-none d-sm-block">Resume</span>
                         </div>
                         <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
-                            <i class="fas fa-folder-open fa-2x d-block"></i>
+                            <i class="fas fa-folder-open fa-2x  d-block" id="workicon"></i>
                             <span class="d-none d-sm-block">Work</span>
                         </div>
                         <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
-                            <i class="fas fa-envelope fa-2x d-block"></i>
+                            <i class="fas fa-envelope fa-2x d-block" id="contacticon"></i>
                             <span class="d-none d-sm-block">Contact</span>
                         </div>
                     </div>
@@ -76,11 +76,10 @@
     <div id="home" class="collapse show">
         <div class="card text-white bg-primary card-body">
             <h5 class="card-title text-center">Welcome to my Page</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Senior Tech Associate with +1 years of industry experience in C++,Android,SQL,RPA. Have interest in designing and crafting efficient modern softwares, and learning new technologies for career growth.</p>
         </div>
         <div class="card bg-light card-body">
             <h4 class="card-title">My skills</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <h5 class="mt-3">HTML5</h5>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
@@ -110,10 +109,153 @@
 
     <div id="resume" class="collapse">
         <div class="card text-white bg-success card-body">
-            <h5 class="card-title text-center">Resume</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-center">My Resume</h5>
+        </div>
+        <div class="card bg-light card-body ">
+            <h4 class="card-title">Where have i worked?</h4>
+            <div class="card border-success mb-3">
+                <div class="card-body text-success">
+                    <h5 class="card-title text-center">Bank of America</h5>
+                    <strong>Position</strong>
+                    <p class="card-text">Senior Tech Associate</p>
+                    <strong>Task</strong>
+                    <ul>
+                        <li><p class="card-text">Develop Automation using Pega Robotics Studio to Automate a process in the bank.</p></li>
+                        <li><p class="card-text">Provide Knowledge Training in SQL to a new fresher.</p></li>
+                    </ul>
+
+                </div>
+                <div class="card-footer bg-transparent border-success text-monospace">06/2017-present</div>
+            </div>
+        </div>
+        <div class="card bg-light card-body">
+            <h4 class="card-title">Education</h4>
+            <div class="card-deck">
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-body text-success">
+                        <h5 class="card-title text-center">Delhi Technological University (Formerly Delhi College of Engineering)</h5>
+                        <ul>
+                            <li><p class="card-text">Electrical & Electronics Engineering</p></li>
+                            <li><p class="card-text">69.35% marks scored</p></li>
+                            <li><p class="card-text">6 Degree of Freedom Robotic Arm as Minor Project in 5th Sem</p></li>
+                            <li><p class="card-text">Vehicle Number Plate Detection using Matlab as Minor Project in 6th Sem.</p></li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent border-success text-monospace">08/2013-05/2017</div>
+                </div>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-body text-success">
+                        <h5 class="card-title text-center">Notre Dame School</h5>
+                        <strong>Class XII</strong>
+                        <p class="card-text">80.80% in Science</p>
+                        <strong>Class X</strong>
+                        <p class="card-text">8 CGPA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-light card-body">
+            <h4 class="card-title">Certifications</h4>
+            <div class="card-deck">
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-body text-success">
+                        <h5 class="card-title text-center">Udacity Android Developer Nanodegree</h5>
+                        <p class="card-text">learned to build a cloud-connected Android app, responsiveness, create amazing user experiences with rich media and publish it on Google Play</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success text-monospace">03/2018-05/2018</div>
+                </div>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                    <div class="card-body text-success">
+                        <h5 class="card-title text-center">Algo++ from Coding Blocks</h5>
+                        <p class="card-text">Data Structure and Algorithms</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-success text-monospace">08/2017-11/2017</div>
+                </div>
+            </div>
+
         </div>
     </div>
+
+    <div id="work" class="collapse">
+        <div class="card text-white bg-warning card-body">
+            <h5 class="card-title text-center">My Work</h5>
+        </div>
+        <div class="card bg-light card-body ">
+            <h4 class="card-title">My Projects</h4>
+            <div class="card-deck p-3">
+                <div class="card border-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-body text-success">
+                        <h5 class="card-title text-center">Movie App like Imdb Android App</h5>
+                        <ul>
+                            <li><p class="card-text">List Popular Movies, Top Rated Movies, Upcoming Movies</p></li>
+                            <li><p class="card-text">Have the functionality to save a movie as favorite</p></li>
+                            <li><p class="card-text">Show all the images and videos of a particular movie</p></li>
+                            <li><p class="card-text">Play Videos and shows the rating with review of the movie</p></li>
+                            <li><p class="card-text">Used MovieDb API</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card border-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-body text-success">
+                        <h5 class="card-title text-center">Baking App</h5>
+                        <ul>
+                            <li><p class="card-text">Run on Different Screens using Fragments</p></li>
+                            <li><p class="card-text">List Recipes</p></li>
+                            <li><p class="card-text">Plays video using Exo-Player</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="contact" class="collapse">
+        <div class="card card-body bg-danger text-white py-5">
+            <h2>Contact</h2>
+        </div>
+
+        <div class="card card-body py-5">
+            <h3>Get In Touch</h3>
+            <form>
+                <div class="form-group">
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                <span class="input-group-text bg-danger text-white">
+                  <i class="fas fa-user"></i>
+                </span>
+                        </div>
+                        <input type="text" class="form-control bg-dark text-white" placeholder="Name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                <span class="input-group-text bg-danger text-white">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                        </div>
+                        <input type="email" class="form-control bg-dark text-white" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                <span class="input-group-text bg-danger text-white">
+                  <i class="fas fa-pencil-alt"></i>
+                </span>
+                        </div>
+                        <textarea class="form-control bg-dark text-white" placeholder="Name"></textarea>
+                    </div>
+                </div>
+
+                <input type="submit" value="Submit" class="btn btn-danger btn-block btn-lg">
+            </form>
+        </div>
+    </div>
+
     <footer id="mainfooter" class="p-4 bg-dark text-white">
         <div class="row">
             <div class="col-md-6">
@@ -131,6 +273,7 @@
         $('.collapse').collapse('hide');
     })
 </script>
+
 
 </body>
 
